@@ -10,12 +10,20 @@ class Grid extends Component {
         let colCount = Math.ceil(this.props.containerWidth / 20);
         let rowCount = Math.ceil(this.props.containerHeight / 20);
 
-        
+        let renderGrid = [];
+        for (var i = 0; i < colCount; i++) {
+            var temp = [];
+            for (var j = 0; j < rowCount; j++) {
+                temp.push(<Cell/>);
+            }
+            renderGrid.push( <div className="column">{temp}</div> )
+        }
+
+
 
         return (
-            <div>
-                <Cell />
-                <Cell />
+            <div className="gridContainer">
+                {renderGrid}
             </div>
         );
     }
