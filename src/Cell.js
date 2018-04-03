@@ -17,7 +17,7 @@ class Cell extends Component {
     }
 
     render() { 
-        let cellColor = this.state.on ? "blue" : "red";
+        let cellColor = this.state.on ? "#ff7bc3" : "#ffbc00";
         return (
             <div className="cell"
                 style={{ backgroundColor: cellColor }}

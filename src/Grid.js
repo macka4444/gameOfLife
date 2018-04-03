@@ -7,6 +7,8 @@ class Grid extends Component {
     render() {
         // eslint-disable-next-line
         // let grid = generateGrid(300);
+
+        // Generate grid display
         let colCount = Math.ceil(this.props.containerWidth / 20);
         let rowCount = Math.ceil(this.props.containerHeight / 20);
 
@@ -18,8 +20,7 @@ class Grid extends Component {
             }
             renderGrid.push( <div className="column">{temp}</div> )
         }
-
-
+        // ---
 
         return (
             <div className="gridContainer">
