@@ -5,4 +5,8 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+//prevent scroll
+document.body.style.overflow = "hidden";
+
 registerServiceWorker();

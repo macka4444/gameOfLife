@@ -16,8 +16,10 @@ class Cell extends Component {
         }));
     }
 
+    
+
     render() { 
-        let cellColor = this.props.getToggle() ? "#ff7bc3" : "#ffbc00";
+        let cellColor = this.props.getState() ? "#ff7bc3" : "#ffbc00";
         return (
             <div className="cell"
                 style={{ backgroundColor: cellColor }}
