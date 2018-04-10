@@ -43,6 +43,8 @@ class Grid extends Component {
                 onClick={this.handleClick}
                 onKeyDown={this.handleKeyPress}
                 tabIndex="0">
+                <p className="titleBlue">CONWAY'S GAME OF LIFE</p>
+                <p className="titlePink">CONWAY'S GAME OF LIFE</p>
                 {renderGrid}
             </div>
         );

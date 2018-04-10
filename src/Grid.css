@@ -1,6 +1,34 @@
+
+@font-face {
+  font-family: makisupa;
+  src: url(/makisupa.ttf);
+}
+
 .gridContainer{
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
+}
+
+.titleBlue{
+  position: absolute;
+  font-family: makisupa;
+  left: 50%;
+  top: 15%;
+  transform: translate(-47.7%, -157%);
+  font-size: 8vw;
+  width: 98vw;
+  color: rgb(72, 145, 255);
+}
+
+.titlePink{
+  position: absolute;
+  font-family: makisupa;
+  left: 50%;
+  top: 15%;
+  transform: translate(-48%,-160%);
+  font-size: 8vw;
+  width: 98vw;
+  color: #ff7bc3;
 }
